@@ -14,12 +14,19 @@ int betterSumFromOneTo(int n) {
 }
 
 void main() {
+
   final start = DateTime.now();
-  //var result = sumFormOneTO(10000);
-  var result1 = betterSumFromOneTo(10000);
+  var result = sumFormOneTO(10000);
   final end = DateTime.now();
   final time = end.difference(start);
-  //print(result);
-  print(result1);
+  print(result);
   print("Time is $time");
+
+  final start1 = DateTime.now();
+  var result1 = betterSumFromOneTo(10000);
+  final end1 = DateTime.now();
+  final time1 = end1.difference(start1);
+  print(result1);
+  print(time1);
+
 }
